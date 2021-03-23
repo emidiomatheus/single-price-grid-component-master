@@ -1,0 +1,210 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+
+    background: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    margin: 2rem 0;
+
+    box-shadow: 0 1rem 2rem 1px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 1.3rem;
+}
+
+#top {
+    background: #fff;
+    
+    border-radius: 5px 5px 0 0;
+}
+
+#top h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cyan);
+
+    margin-top: 0.5rem
+}
+
+#top h3 {
+    color: var(--bright-yellow);
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#top p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    line-height: 1.8;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+#subscription {
+    background: var(--cyan);
+    color: white;
+}
+
+h2 {
+    font-size: 1.1rem;
+    padding-top: 0.5rem
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: white;
+}
+
+#price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--light-gray);
+    opacity: 0.7;
+
+    margin-left: 0.8rem
+}
+
+#sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bright-yellow);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem 2px rgba(0, 0, 0, 0.1);
+
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 0;
+}
+
+#why-us {
+    background: var(--cyan);
+    opacity: 0.8;
+    color: white;
+
+    border-radius: 0 0 5px 5px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+li {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+/* =========== Desktop =============== */
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+
+        justify-content: center;
+        padding: 0;
+    }
+
+    main {
+        margin: 0;
+        width: 55vw;
+        max-width: 650px;
+    }
+
+    .card {
+        padding: 2.4rem
+    }
+
+    #top {
+        border-radius: 8px 8px 0 0;
+    }
+
+    #top p {
+        font-size: 1rem
+    }
+
+    #top h1 {
+        font-size: 1.6rem
+    }
+
+    #top h3 {
+        font-size: 1.2rem
+    }
+    
+    #group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #subscription {
+        border-radius: 0 0 0 8px
+    }
+
+    #price-day {
+        opacity: 0.9
+    }
+
+    #sign-up {
+        transition: 0.2s;
+
+        margin: 2rem 0 0 0 ;
+    }
+
+    #sign-up:hover {
+        opacity: 0.9;
+    }
+
+    #why-us {
+        border-radius: 0 0 8px 0
+    }
+
+    li {
+        opacity: 0.8;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 2vh;
+    }
+}
